@@ -1,8 +1,8 @@
 
-import {Quiz} from '../data/quiz-types';
+import {QuizTypes} from '../data/quiz-types';
 
 export type StateType = {
-    quiz : Quiz
+    quiz : QuizTypes,
     score : number,
     currentQuestion : number;
     username : string

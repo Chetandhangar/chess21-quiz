@@ -1,10 +1,10 @@
 import { createContext , useContext, FC, useReducer} from 'react'
-import {quizOne} from '../data/data';
+import {quizData} from '../data/data';
 import {StateType, QuizContext} from './data-context-types'
 import {reducerFunction} from '../reducer/reducer'
 
 const initialState : StateType =  {
-    quiz : quizOne, 
+    quiz : quizData, 
     score : 0,
     username : "chetan",
     currentQuestion : 0
