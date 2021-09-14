@@ -11,8 +11,8 @@ export const  Result = () =>{
         navigate('/')
     }
     return(
-        <div>
-            Your Overall Score is {state.score}
+        <div className="container">
+           <p>Hi {state.username}  Your Overall Score is {state.score}</p> 
             <Button onClick={() => resetHandler()}>Replay</Button>
         </div>
     )

@@ -3,13 +3,15 @@ import {useParams} from 'react-router-dom'
 import {quizData} from '../../data/data';
 import {useData} from '../../context/data-context';
 import {Result} from '../Result/Result';
+import './Quiz.css';
 
 export const CurrentQuiz = () => {
     const {dispatch,state} = useData()
     const {quizId} = useParams();
     const currentQuiz = quizData.find((quiz) => quiz.id === parseInt(quizId));
     return(
-        <div>
+        <div className="quiz-details-container">
+        <div className="quiz-card">
         {currentQuiz?.quizName}
         <div>
         {state.currentQuestion > 2? (<Result />)
@@ -28,6 +30,8 @@ export const CurrentQuiz = () => {
         ))}
         </div>)}
         </div>
+        </div>
+      
         </div>
     )
 }

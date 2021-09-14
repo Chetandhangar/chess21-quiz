@@ -1,0 +1,16 @@
+.quiz{
+    width: fit-content;
+    text-align: center;
+}
+
+.category-card{
+    border: solid black 0.3rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.quiz-card-image {
+    height: 25%;
+    width: 100%;
+}
