@@ -5,6 +5,7 @@ export const quizData: QuizTypes =[
         id : 1,
         quizName : "World Cup 2021",
         quizImage : '/assets/images/chess-word-champions.jpg',
+        totalquestions : 3,
         question : [
             {
                 question : "Who won the world cup 2021 ?",
@@ -61,6 +62,7 @@ export const quizData: QuizTypes =[
                 ]
             },
         ]
+        
 
 },
 
@@ -68,6 +70,7 @@ export const quizData: QuizTypes =[
     id : 2,
     quizName : "World Cup 2020",
     quizImage : '/assets/images/chess-word-champions.jpg',
+    totalquestions : 3,
     question : [
         {
             question : "Who won the world cup 2021 ?",
@@ -131,6 +134,7 @@ export const quizData: QuizTypes =[
     id : 3,
     quizName : "World Cup 2019",
     quizImage :'/assets/images/chess-word-champions.jpg',
+    totalquestions : 3,
     question : [
         {
             question : "Who won the world cup 2021 ?",

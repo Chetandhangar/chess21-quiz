@@ -9,11 +9,12 @@ export type Question = {
     options : Options[]
 }
 
-type Quiz  ={
+export type Quiz  ={
     id : Number,
     quizImage : string,
     quizName : string,
-    question : Question[]
+    question : Question[],
+    totalquestions : number
     
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useData } from './context/data-context';
-import {Home , CurrentQuiz,Header} from './components/index';
+import {Home , CurrentQuiz,Header,QuizAnswerStat} from './components/index';
 import {Routes,Route} from 'react-router-dom'
 
 
@@ -21,6 +21,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quiz/:quizId"  element={<CurrentQuiz/>} />
+        <Route path="/quiz/stat" element={<QuizAnswerStat />}/>
        </Routes>
       
       </div>

@@ -19,11 +19,32 @@ function reducerFunction(state : StateType, action :ACTIONTYPES){
             score : 0,
             currentQuestion : 1
           }
+        case "SET_CURRENT_QUIZ":
+          console.log("current quiz set called")
+          return{
+            ...state,
+            score : 0,
+            currentQuiz : {...state.currentQuiz, ...action.payload},
+            currentQuestion : state.currentQuestion = 1
+          }
+          case "RESET_CURRENT_QUIZ" :
+            return{
+              ...state,
+              score : state.score = 0,
+              currentQuiz : {...state.currentQuiz, 
+                id : 0,
+                quizImage : "",
+                quizName : "",
+                question : [],
+                totalquestions : 0 },
+                currentQuestion : state.currentQuestion = 1
+            }
         default :
         return{
           ...state
         }
     }
   }
+  
 
   export {reducerFunction}

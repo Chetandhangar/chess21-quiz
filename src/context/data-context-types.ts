@@ -1,11 +1,14 @@
 
-import {QuizTypes} from '../data/quiz-types';
+import {QuizTypes,Quiz} from '../data/quiz-types';
+
+export type CurrentQuizType = Quiz
 
 export type StateType = {
     quiz : QuizTypes,
     score : number,
     currentQuestion : number;
-    username : string
+    username : string,
+    currentQuiz : CurrentQuizType,
 }
 
 
