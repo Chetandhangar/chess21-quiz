@@ -68,21 +68,21 @@ export const quizData: QuizTypes =[
 
 {
     id : 2,
-    quizName : "World Cup 2020",
+    quizName : "Chess Champions",
     quizImage : '/assets/images/chess-word-champions.jpg',
     totalquestions : 3,
     question : [
         {
-            question : "Who won the world cup 2021 ?",
+            question : "Who is the current World number 1 in chess?",
             points : 1,
             options : [
                 {
                     text : "Magnus Carlsen",
-                    isRight : false
+                    isRight : true
                 },
                 {
                     text : "Duda",
-                    isRight : true
+                    isRight : false
                 },
                 {
                     text : "VIdit Gujrati",
@@ -91,7 +91,7 @@ export const quizData: QuizTypes =[
             ]
         },
         {
-            question : "Who were the runner-up in world cup 2021 ?",
+            question : "Current World number 2 in chess classics?",
             points : 1,
             options : [
                 {
@@ -99,8 +99,8 @@ export const quizData: QuizTypes =[
                     isRight : false
                 },
                 {
-                    text : "Duda",
-                    isRight : false
+                    text : "Nepo",
+                    isRight : true
                 },
                 {
                     text : "Karjkin",
@@ -109,7 +109,7 @@ export const quizData: QuizTypes =[
             ]
         },
         {
-            question : "Second Indian to qualify in the quater-finals of world cup 2021 ?",
+            question : "Current India's Number 1 in chess  ?",
             points : 1,
             options : [
                 {
@@ -117,12 +117,12 @@ export const quizData: QuizTypes =[
                     isRight : false
                 },
                 {
-                    text : "Adhibhan",
-                    isRight : false
+                    text : "Vishwanath Anand",
+                    isRight : true
                 },
                 {
                     text : "VIdit Gujrati",
-                    isRight : true
+                    isRight : false
                 }
             ]
         },
