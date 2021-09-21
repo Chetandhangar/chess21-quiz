@@ -132,24 +132,24 @@ export const quizData: QuizTypes =[
 
 {
     id : 3,
-    quizName : "World Cup 2019",
+    quizName : "Online Chess olympia 2020",
     quizImage :'/assets/images/chess-word-champions.jpg',
     totalquestions : 3,
     question : [
         {
-            question : "Who won the world cup 2021 ?",
+            question : "Who won online chess olympia 2020 ?",
             points : 1,
             options : [
                 {
-                    text : "Magnus Carlsen",
-                    isRight : false
-                },
-                {
-                    text : "Duda",
+                    text : "India and Russia",
                     isRight : true
                 },
                 {
-                    text : "VIdit Gujrati",
+                    text : "China and Usa",
+                    isRight : false
+                },
+                {
+                    text : "India and Norway",
                     isRight : false
                 }
             ]
