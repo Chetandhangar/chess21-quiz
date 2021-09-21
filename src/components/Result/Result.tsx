@@ -14,11 +14,11 @@ export const  Result = () =>{
     return(
         <div className="container">
            <p>Hi {state.username}  Your Overall Score is {state.score}</p> 
-            <Button onClick={() => resetHandler()}>Replay</Button>
+            <Button style={{marginTop : "3rem", marginLeft : "3rem"}} onClick={() => resetHandler()}>Replay</Button>
             <div></div>
-            <div>
+            <div style={{marginTop : "3rem", marginLeft : "3rem"}}>
                 <Button>
-                    <Link to='/quiz/stat'>
+                    <Link style={{marginTop : "3rem" , padding : "3rem"}} to='/quiz/stat'>
                         See Answers
                     </Link>
                 </Button>

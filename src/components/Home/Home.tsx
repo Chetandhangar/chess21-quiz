@@ -48,7 +48,6 @@ export const Home = () => {
               {quiz?.map((quiz) =>(
                  <Grid item  xs={12} sm={6} md={4}>
                    <Card>
-                     <Link  to={`/quiz/${quiz.id}`}>
                    <CardMedia 
                             className={classes.media}
                             image={quiz?.quizImage}
@@ -66,10 +65,11 @@ export const Home = () => {
                     <Button 
                     onClick={() => dispatch({type : "SET_CURRENT_QUIZ", payload : quiz})}
                     size="small" color="primary">
+                      <Link  to={`/quiz/${quiz.id}`}>
                       Play Quiz
+                      </Link>
                     </Button>
                     </CardActions>
-                    </Link>
                    </Card>
                  </Grid>
               ))}
