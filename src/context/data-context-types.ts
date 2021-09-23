@@ -9,6 +9,7 @@ export type StateType = {
     currentQuestion : number;
     username : string,
     currentQuiz : CurrentQuizType,
+    rulesState : boolean
 }
 
 

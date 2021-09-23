@@ -4,3 +4,4 @@ export type ACTIONTYPES =
     | {type : "RESET" }
     | {type : "SET_CURRENT_QUIZ" ; payload : object }
     | {type : "RESET_CURRENT_QUIZ"}
+    | {type : "SET_RULES_STATE"; payload : boolean}

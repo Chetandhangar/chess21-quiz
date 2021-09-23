@@ -30,6 +30,7 @@ function reducerFunction(state : StateType, action :ACTIONTYPES){
           case "RESET_CURRENT_QUIZ" :
             return{
               ...state,
+              rulesState : state.rulesState =  false,
               score : state.score = 0,
               currentQuiz : {...state.currentQuiz, 
                 id : 0,
@@ -39,6 +40,11 @@ function reducerFunction(state : StateType, action :ACTIONTYPES){
                 totalquestions : 0 },
                 currentQuestion : state.currentQuestion = 1
             }
+          case "SET_RULES_STATE" : 
+          return{
+            ...state ,
+            rulesState : state.rulesState = action.payload
+          }
         default :
         return{
           ...state

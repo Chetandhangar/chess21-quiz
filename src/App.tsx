@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { useData } from './context/data-context';
 import {Home , CurrentQuiz,Header,QuizAnswerStat} from './components/index';
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom';
 
 
 

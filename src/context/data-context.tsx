@@ -3,7 +3,6 @@ import {quizData} from '../data/data';
 import {StateType, QuizContext} from './data-context-types'
 import {reducerFunction} from '../reducer/reducer';
 
-
 const initialState : StateType =  {
     quiz : quizData, 
     score : 0,
@@ -15,13 +14,14 @@ const initialState : StateType =  {
       quizName : "",
       question : [],
       totalquestions : 0
-    }
+    },
+    rulesState : false
    
   }
 
 const DataContext = createContext<QuizContext>({
   state : initialState,
-  dispatch : () =>{}
+  dispatch : () =>{},
 });
 
 
@@ -30,7 +30,7 @@ export const DataProvider : FC  = ({children}) => {
     const[state,dispatch] = useReducer(reducerFunction , initialState)
     console.log(state.currentQuiz,'from state current quiz obj')
      return(
-        <DataContext.Provider value={{state, dispatch}}>
+        <DataContext.Provider value={{state, dispatch,}}>
             {children}
         </DataContext.Provider>
     )
