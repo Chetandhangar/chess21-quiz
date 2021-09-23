@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
     },
     media : {
-      height : 300,
+      height : 250,
     },
     productContainer : {
       marginTop : "3rem"
@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  card : {
+    backgroundColor : "#e0e0e0"
   }
   }));
 
@@ -47,7 +50,7 @@ export const Home = () => {
             <Grid container spacing={3}>
               {quiz?.map((quiz) =>(
                  <Grid item  xs={12} sm={6} md={4}>
-                   <Card>
+                   <Card elevation={3} className={classes.card}>
                    <CardMedia 
                             className={classes.media}
                             image={quiz?.quizImage}

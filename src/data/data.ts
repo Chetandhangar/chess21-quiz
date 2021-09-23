@@ -5,7 +5,7 @@ export const quizData: QuizTypes =[
         id : 1,
         quizName : "World Cup 2021",
         quizImage : '/assets/images/chess-word-champions.jpg',
-        totalquestions : 3,
+        totalquestions : 5,
         question : [
             {
                 question : "Who won the world cup 2021 ?",
@@ -61,6 +61,42 @@ export const quizData: QuizTypes =[
                     }
                 ]
             },
+            {
+                question : "Only Player to remain unbeaten in World cup 2021 ?",
+                points : 1,
+                options : [
+                    {
+                        text : "Duda",
+                        isRight : true
+                    },
+                    {
+                        text : "Adhibhan",
+                        isRight : false
+                    },
+                    {
+                        text : "Magnus Carlsen",
+                        isRight : false
+                    }
+                ]
+            },
+            {
+                question : "How many rounds are there in the 2021 Chess World Cup ?",
+                points : 1,
+                options : [
+                    {
+                        text : "5",
+                        isRight : false
+                    },
+                    {
+                        text : "8",
+                        isRight : true
+                    },
+                    {
+                        text : "7",
+                        isRight : false
+                    }
+                ]
+            }
         ]
         
 
