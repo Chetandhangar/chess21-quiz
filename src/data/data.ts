@@ -140,7 +140,7 @@ export const quizData: QuizTypes =[
                 },
                 {
                     text : "Karjkin",
-                    isRight : true
+                    isRight : false
                 }
             ]
         },

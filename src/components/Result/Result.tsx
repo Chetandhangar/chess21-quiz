@@ -1,8 +1,8 @@
 import React from 'react'
 import {useData} from '../../context/data-context';
-import {Button} from 'reactstrap';
 import {Link, useNavigate} from 'react-router-dom';
-
+import {Container , CssBaseline, Card , CardContent, Typography,Button} from "@material-ui/core"
+import useStyles from './ResultStyles'
 
 export const  Result = () =>{
     const {state,dispatch} = useData();
@@ -11,18 +11,47 @@ export const  Result = () =>{
         dispatch({type : "RESET"});
         navigate('/')
     }
+    const classes = useStyles();
     return(
-        <div className="container">
-           <p>Hi {state.username}  Your Overall Score is {state.score}</p> 
-            <Button style={{marginTop : "3rem", marginLeft : "3rem"}} onClick={() => resetHandler()}>Replay</Button>
-            <div></div>
-            <div style={{marginTop : "3rem", marginLeft : "3rem"}}>
-                <Button>
-                    <Link style={{marginTop : "3rem" , padding : "3rem"}} to='/quiz/stat'>
-                        See Answers
-                    </Link>
-                </Button>
+      <Container component="main">
+          <CssBaseline />
+          <div className ={classes.paper}>
+            <div className={classes.root}>
+                <Card className={classes.Card}>
+                    <CardContent>
+                        <Typography>
+                            {state?.score > 3 ? (
+                                <><Typography className={classes.title}>
+                                    {"Bravo ! Well Played"}
+                                   </Typography></>
+                            ):
+                            (
+                                <><Typography className={classes.title}>
+                                    {`You need to Improve`}
+                                </Typography>
+                                </>
+                            )
+                            }
+                        </Typography>
+                        <Typography className={classes.title}>
+                            {`Your Score is  ${state.score}` }                            
+                        </Typography>
+                   </CardContent>
+                   <div style={{textAlign : "center", marginBottom : "1rem"}}>
+
+                       <Button 
+                       onClick={() => resetHandler()}>
+                           Play Quiz
+                       </Button>
+                        <Button>
+                        <Link
+                        className="text-dark"
+                         to="/quiz/stat">See Answers</Link>
+                        </Button>
+                    </div>    
+                </Card>
             </div>
-        </div>
+          </div>
+      </Container>
     )
 } 
