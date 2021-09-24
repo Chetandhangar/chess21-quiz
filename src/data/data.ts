@@ -105,7 +105,7 @@ export const quizData: QuizTypes =[
 {
     id : 2,
     quizName : "Chess Champions",
-    quizImage : '/assets/images/chess-word-champions.jpg',
+    quizImage : '/assets/images/chess-champion.png',
     totalquestions : 3,
     question : [
         {
@@ -168,8 +168,8 @@ export const quizData: QuizTypes =[
 
 {
     id : 3,
-    quizName : "Online Chess olympia 2020",
-    quizImage :'/assets/images/chess-word-champions.jpg',
+    quizName : "Online Chess Olympia 2020",
+    quizImage :'/assets/images/onlinechess.jpeg',
     totalquestions : 3,
     question : [
         {
